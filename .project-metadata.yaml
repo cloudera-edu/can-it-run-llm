@@ -1,0 +1,31 @@
+name: Can You Run It? LLM version
+description: Estimate GPU memory requirements for LLM inference, full training, and LoRA fine-tuning.
+author: Cloudera Education
+date: "2026-10-02"
+
+specification_version: 1.0
+prototype_version: 1.0
+
+runtimes:
+  - editor: PBJ Workbench
+    kernel: Python 3.10
+    edition: Can You Run It Edition
+    version: 2024.02
+
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: cml/install_dependencies.py
+    kernel: python3
+    cpu: 2
+    memory: 16
+
+  - type: start_application
+    name: Can You Run It
+    subdomain: can-you-run-it
+    script: cml/launch_app.py
+    kernel: python3
+    cpu: 2
+    memory: 16
+    gpu: 0
+    short_summary: Start the Can You Run It LLM application
