@@ -1,0 +1,7 @@
+accelerate==0.34.2
+transformers==4.45.2
+huggingface_hub==0.25.2
+pandas==2.0.1
+plotly==5.14.1
+streamlit-datalist
+einops==0.6.1
